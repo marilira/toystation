@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="main.css">
+        <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+        <title>Toy Station</title>
+    </head>
+    <body>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Contato</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Telefone: (40) 98734-0022</p>
+                        <p>E-mail: toystation@contato.br</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Endereço</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Rua Peixonauta, Bairro Centro</p>
+                        <p>Galeria Capitão Careca</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-bar">
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo.png" alt="Logo" width="150" height="80">
+                </a>
+            </div>
+        
+            <div class="links">
+                <a style="text-decoration: none; color: black;" href="#produtos" class="me-2">Produtos</a>
+                <a type="button" style="text-decoration: none; color: black;" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="me-2">Endereço</a>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Contato</a>
+            </div>
+        
+            <div class="acoes">
+                <a href="#" title="Favoritos" class="me-1"><img src="assets/coracao.png" alt="Favoritos" width="30" height="30"></a>
+
+                <a href="#" title="Carrinho de compras" class="me-1"><img src="assets/carrinho.png" alt="Carrinho de compras" width="30" height="30"></a>
+        
+                <button type="button" class="btn btn-outline-dark">Entrar</button>
+            </div>
+        </nav>    
+
+        <main>
+            <div class="content">
+                <div class="center-text">
+                    <h1>Compre o brinquedo ideal</h1>
+                    <h3>Navegue por um mar de possibilidades</h2>
+                    <form class="form-inline">
+                        <input class="form-control me-2" type="search" placeholder="Encontre tudo aqui">
+                        <button class="btn btn-success" type="submit">Ir</button>
+                    </form>
+                </div>
+            </div>
+        </main>    
+
+        <section id="produtos">
+            <div class="fileira mb-4 mt-4">
+                <div class="card me-2" style="width: 18rem;">
+                    <img src="assets/lego-classic.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lego Classic</h5>
+                      <p class="card-text">R$ 50,00</p>
+                      <a href="#produtos" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card me-2" style="width: 18rem;">
+                    <img src="assets/caixa-barbie.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Caixa da Barbie</h5>
+                      <p class="card-text">R$ 100,00</p>
+                      <a href="#produtos" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card me-2" style="width: 18rem;">
+                    <img src="assets/bluey.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mini Figuras - Bluey</h5>
+                      <p class="card-text">R$ 25,00</p>
+                      <a href="#produtos" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/capacete-pantera.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Capacete do Pantera Negra</h5>
+                      <p class="card-text">R$ 30,00</p>
+                      <a href="#produtos" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="fileira mb-4">
+                <div class="card me-2" style="width: 18rem;">
+                    <img src="assets/crybabie.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Crybabie</h5>
+                      <p class="card-text">R$ 200,00</p>
+                      <a href="#produtos" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card me-2" style="width: 18rem;">
+                    <img src="assets/garras.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Garras</h5>
+                        <p class="card-text">R$ 20,00</p>
+                        <a href="#produtos" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card me-2" style="width: 18rem;">
+                    <img src="assets/boneca.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Boneca e acessórios</h5>
+                      <p class="card-text">R$ 10,00</p>
+                      <a href="#produtos" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/playset.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Playset - DC - Black Adam</h5>
+                      <p class="card-text">R$ 40,00</p>
+                      <a href="#produtos" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
